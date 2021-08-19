@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-const Header = () => {
+export const Header = () => {
   return (
-    <header className="main-banner">
+    <header id="main-banner">
       <div className="nav-container">
         <a href="#" className="brand">
           <i className="fas fa-brain"></i>
@@ -41,4 +41,3 @@ const Header = () => {
     </header>
   );
 };
-export default Header;
