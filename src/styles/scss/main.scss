@@ -3,6 +3,17 @@
 
 @include reset;
 
-.main-banner {
-  background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../assets/img/office.jpg')
+#main-banner {
+  background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../../assets/img/office.jpg');
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  @include mobile {
+    height: 100vh;
+  }
+  nav {
+    @include mobile {
+      display: none;
+    }
+  }
 }
